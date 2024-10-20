@@ -35,7 +35,7 @@ dataset/
 │       └── ...
 
 
-The model needs to process the image into small blocks of 16 * 16, so the size of the image needs to be a multiple of 16. When the size is not suitable, call the record_image_sizes and resize_images'in_folder methods in train-diffusion. py to handle it. When generating, use the resize_images_from. FILE method in eval-diffusion. py to restore the original size.
+The model needs to process the image into small blocks of 16 * 16, so the size of the image needs to be a multiple of 16. When the size is not suitable, call the record_image_sizes and resize_images_in_folder methods in train_diffusion.py to handle it. When generating, use the resize_images_from_file method in eval_diffusion.py to restore the original size.
 
 ## Run
 ### Training
@@ -49,7 +49,7 @@ The model training parameters are configured in the configs.yml file. The key pa
 * Learning rate: lr
 * Batch size: batch_size
 
-**model training command**
+**train**
 ```
 python train_diffusion.py
 ```
