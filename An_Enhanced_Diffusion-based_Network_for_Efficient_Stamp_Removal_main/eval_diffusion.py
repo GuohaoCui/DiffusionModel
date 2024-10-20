@@ -93,6 +93,6 @@ def resize_images_from_file(folder, input_file):
 
 if __name__ == '__main__':
     main()
-    path = '/public/home/lab70432/CGH_workspace/diffusion_stamp_main_STN/results'
-    input_file = '/public/home/lab70432/CGH_workspace/output.txt'
-    resize_images_from_file(path, input_file)    
+    #path = '/public/home/lab70432/CGH_workspace/diffusion_stamp_main_STN/results'
+    #input_file = '/public/home/lab70432/CGH_workspace/output.txt'
+    #resize_images_from_file(path, input_file)    
