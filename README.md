@@ -35,7 +35,6 @@ Model training requires paired stamp document images and real images, with a dat
      │       ├── 2.png
      │       └──...
 
-The model needs to process the image into small blocks of 16 * 16, so the size of the image needs to be a multiple of 16. When the size is not suitable, call the record_image_sizes and resize_images_in_folder methods in train_diffusion.py to handle it. When generating, use the resize_images_from_file method in eval_diffusion.py to restore the original size.
 
 ## Run
 ### Training
