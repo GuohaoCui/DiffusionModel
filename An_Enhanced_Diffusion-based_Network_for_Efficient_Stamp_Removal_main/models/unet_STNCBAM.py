@@ -196,65 +196,6 @@ class AttnBlock(nn.Module):
 
         return x+h_
 
-# class stochasticReLU(nn.Module):
-#     def __init__(self, low, high):
-#         super().__init__()
-#         self.low = low
-#         self.high = high
-#
-#     def forward(self, x):
-#
-#         if random.randint(1, 4) < 3:
-#             x[x <= 0] = 0
-#             x3 = x
-#         else:
-#             x = x.to(device)
-#             dim0, dim1, dim2, dim3 = x.shape
-#             x[x <= 0] = 0
-#             x0 = x
-#             x1 = x0.reshape(1, -1)
-#             K = [random.uniform(self.low, self.high) for _ in range(dim0 * dim1 * dim2 * dim3)]
-#             K_tensor = torch.tensor(K).to(device)
-#             K1 = K_tensor.reshape(1, -1)
-#             x2 = x1 * K1
-#             x3 = x2.reshape(dim0, dim1, dim2, dim3)
-#
-#         return x3
-
-# class stochasticReLU(nn.Module):
-#     def __init__(self, low, high):
-#         super().__init__()
-#         self.low = low
-#         self.high = high
-#
-#     def forward(self, x):
-#         x = x.to(device)
-#         random_number = torch.randint(low=1, high=4, size=(), device='cuda')
-#         if random_number < 3:
-#             x[x <= 0] = 0
-#             x3 = x
-#         else:
-#             dim0, dim1, dim2, dim3 = x.shape
-#             w = torch.randint(low=-5, high=5, size=(), device='cuda')
-#             if w==0:
-#                x[x <= 0] = 0
-#             else:
-#                x[x <= w/10] = 0
-#             x0 = x
-#             x1 = x0.reshape(1, -1)
-#             K = torch.empty(dim0, dim1, dim2, dim3, device='cuda')
-#             K.uniform_(self.low, self.high)
-#             K = K.view(-1)
-#             K_tensor = torch.tensor(K).to(device)
-#             K1 = K_tensor.reshape(1, -1)
-#             if w==0:
-#                x2 = x1 * K1
-#             else:
-#                x2 = x1 * K1 + w/10
-#             x3 = x2.reshape(dim0, dim1, dim2, dim3)
-#
-#         return x3
-
 
 
 class stochasticReLU(nn.Module):
