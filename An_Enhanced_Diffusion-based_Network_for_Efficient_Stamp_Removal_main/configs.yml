@@ -30,15 +30,15 @@ diffusion:
 training:
     patch_n: 16
     batch_size: 12
-    n_epochs: 180
-    n_iters: 2000000
+    n_epochs: 200
+    n_iters: 20000000
     snapshot_freq: 10000  # model save frequency
     validation_freq: 10000
     resume: './pretrained_model/'  # path to pretrained model
     seed: 61  # random seed
 
 sampling:
-    batch_size: 16
+    batch_size: 32
     last_only: True
     sampling_timesteps: 25
 
