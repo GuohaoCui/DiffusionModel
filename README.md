@@ -56,3 +56,6 @@ python train_diffusion.py
 ```
 python eval_diffusion.py
 ```
+
+## Explanation on data
+Because we are prohibited from accessing foreign networks, we cannot upload data to foreign cloud drives. In addition, emails may be filtered by agents. We are trying to find solutions to these problems.
