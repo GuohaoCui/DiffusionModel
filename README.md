@@ -60,4 +60,4 @@ python eval_diffusion.py
 ## Data
 The link to the dataset is [dataset](https://drive.google.com/file/d/1xLqMP_hpbQiuvI_xvblGoR2f7i5y4SdK/view?usp=drive_link), and the link to the pre-trained model is [weight](https://drive.google.com/file/d/1YJepDa6VhTGJfB0Rk9IxkxCbikKZOjhN/view?usp=drive_link). 
 
-In particular, since the complete document image contains sensitive information of many companies, we only provide the stamp area and the corresponding real image. We are trying to find a way to solve this problem. We are very sorry for the trouble caused to you. In addition, since the dataset is randomly divided, the test results may not be exactly the same as in the paper, but generally will not exceed 0.1.
+In particular, since the complete document image contains sensitive information of many companies, we only provide the stamp area and the corresponding ground truth. We are trying to find a way to solve this problem. We are very sorry for the trouble caused to you. In addition, since the dataset is randomly divided, the test results may not be exactly the same as in the paper, but generally will not exceed 0.1.
